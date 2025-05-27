@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Personal Interactiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda Personal</h1>
+        
+        <!-- Formulario para agregar/editar tareas -->
+        <div class="form-container">
+            <input type="hidden" id="taskId">
+            <div class="form-group">
+                <label for="title">Título</label>
+                <input type="text" id="title" placeholder="Título de la tarea">
+                <p id="titleError" class="error hidden"></p>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea id="description" placeholder="Descripción de la tarea"></textarea>
+                <p id="descriptionError" class="error hidden"></p>
+            </div>
+            <div class="form-group">
+                <label for="dueDate">Fecha de Vencimiento</label>
+                <input type="date" id="dueDate">
+                <p id="dueDateError" class="error hidden"></p>
+            </div>
+            <button id="addTaskBtn">Agregar Tarea</button>
+            <p id="successMessage" class="success hidden">¡Tarea guardada con éxito!</p>
+        </div>
+
+        <!-- Lista de tareas -->
+        <ul id="taskList" class="task-list"></ul>
+        
+        <!-- Footer -->
+        <div class="footer">Desarrollado por Sebastian Garcia - Ing. Software</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
