@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #e2be99; /* Light beige background */
+    background-color: #e2be99; 
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -10,19 +10,19 @@ body {
 }
 
 .container {
-    background-color: #f6ddcc ; /* Very pale beige container */
+    background-color: #f6ddcc ;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 2rem; /* Aumenté el padding para más simetría */
+    padding: 2rem;
     width: 100%;
     max-width: 28rem;
-    margin: 0 auto; /* Centrado horizontal */
-    text-align: center; /* Centrado de texto interno */
-    position: relative; /* Para posicionar el footer */
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
 }
 
 h1 {
-    color: #8b593f; /* Darkest brown for header */
+    color: #8b593f;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -34,26 +34,26 @@ h1 {
 
 .form-group {
     margin-bottom: 1rem;
-    text-align: left; /* Alineación a la izquierda para los campos */
+    text-align: left;
 }
 
 label {
     display: block;
     font-size: 0.875rem;
     font-weight: medium;
-    color: #8b593f; /* Darkest brown for labels */
+    color: #8b593f; 
     margin-bottom: 0.25rem;
 }
 
 input, textarea {
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #a69779; /* Medium brown for borders */
+    border: 1px solid #a69779;
     border-radius: 0.25rem;
-    background-color: #f1d7be; /* Pale beige for inputs */
+    background-color: #f1d7be;
     font-size: 1rem;
     color: #8b593f;
-    box-sizing: border-box; /* Asegura que el padding no altere el ancho */
+    box-sizing: border-box; 
 }
 
 textarea {
@@ -62,47 +62,47 @@ textarea {
 }
 
 button {
-    background-color: #8b593f; /* Darkest brown for buttons */
-    color: #fffbf9; /* Off-white text */
+    background-color: #8b593f;
+    color: #fffbf9;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 0.25rem;
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    display: block; /* Hace que el botón ocupe todo el ancho disponible */
-    margin: 0 auto; /* Centra el botón */
+    display: block;
+    margin: 0 auto;
 }
 
 button:hover {
-    transform: scale(1.05); /* Slight scale up on hover */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 button:active {
-    transform: scale(0.95); /* Slight scale down on click */
+    transform: scale(0.95); 
 }
 
 .task-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: left; /* Alineación a la izquierda para la lista */
+    text-align: left; 
 }
 
 .task-list li {
-    background-color: #c8a884; /* Light brown for task cards */
+    background-color: #c8a884;
     border-radius: 0.25rem;
     padding: 1rem;
     margin-bottom: 1rem;
     cursor: pointer;
-    text-align: left; /* Alineación a la izquierda dentro de cada tarea */
+    text-align: left; 
 }
 
 .task-list li.completed {
     text-decoration: line-through;
-    background-color: #58d68d; /* Muted purple for completed tasks */
-    color: #fffbf9; /* Off-white text for contrast */
+    background-color: #58d68d;
+    color: #fffbf9;
 }
 
 .task-list li .task-header {
@@ -112,23 +112,23 @@ button:active {
 }
 
 .task-list li .task-details {
-    display: none; /* Hidden by default */
+    display: none; 
     margin-top: 0.5rem;
 }
 
 .task-list li .task-details.visible {
-    display: block; /* Show when toggled */
+    display: block;
 }
 
 .task-list li .task-header h3 {
     font-size: 1rem;
     font-weight: 600;
-    color: #8b593f; /* Darkest brown for task title */
+    color: #8b593f;
 }
 
 .task-list li .task-details p {
     font-size: 0.875rem;
-    color: #8b593f; /* Darkest brown for task description */
+    color: #8b593f;
 }
 
 .task-list li .task-actions {
@@ -145,24 +145,24 @@ button:active {
 }
 
 .task-list li .task-actions button:hover {
-    transform: scale(1.1); /* Slight scale up on hover */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: scale(1.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .task-list li .task-actions button:active {
-    transform: scale(0.9); /* Slight scale down on click */
+    transform: scale(0.9);
 }
 
 .task-list li .task-actions button.complete {
-    color: #becaa8; /* Light green-beige for complete button */
+    color: #becaa8;
 }
 
 .task-list li .task-actions button.edit {
-    color: #8b593f; /* Darkest brown for edit button */
+    color: #8b593f;
 }
 
 .task-list li .task-actions button.delete {
-    color: #dc2626; /* Red for delete button */
+    color: #dc2626;
 }
 
 .error {
@@ -172,7 +172,7 @@ button:active {
 }
 
 .success {
-    color: #becaa8; /* Light green-beige for success message */
+    color: #becaa8;
     font-size: 0.875rem;
     margin-top: 0.5rem;
     text-align: center;
@@ -185,13 +185,12 @@ button:active {
 .footer {
     margin-top: 1.5rem;
     font-size: 0.75rem;
-    color: #8b593f; /* Darkest brown for footer text */
+    color: #8b593f;
     text-align: center;
     padding-top: 0.5rem;
-    border-top: 1px solid #a69779; /* Medium brown for border */
+    border-top: 1px solid #a69779;
 }
 
-/* Responsive adjustments */
 @media (max-width: 640px) {
     .container {
         padding: 1rem;
